@@ -133,6 +133,73 @@ nav a:hover {
   color: var(--muted);
 }
 
+.stats-grid {
+  margin-top: 14px;
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 10px;
+}
+
+.stat-card {
+  border: 1px solid var(--border);
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 14px;
+  padding: 10px 12px;
+}
+
+.stat-card strong {
+  display: block;
+  font-size: 20px;
+  line-height: 1;
+}
+
+.stat-card span {
+  display: block;
+  margin-top: 6px;
+  font-size: 12px;
+  color: var(--muted);
+  font-weight: 600;
+}
+
+.institute-marquee {
+  margin-top: 20px;
+  border-top: 1px solid var(--border);
+  padding-top: 14px;
+  overflow: hidden;
+  mask-image: linear-gradient(to right, transparent, black 8%, black 92%, transparent);
+}
+
+.institute-track {
+  display: flex;
+  gap: 10px;
+  width: max-content;
+  animation: scroll-institutes 26s linear infinite;
+}
+
+.institute-logo {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  white-space: nowrap;
+  padding: 9px 14px;
+  border-radius: 999px;
+  border: 1px solid var(--border);
+  background: rgba(255, 255, 255, 0.06);
+  color: var(--text);
+  font-size: 12px;
+  font-weight: 800;
+  letter-spacing: 0.2px;
+}
+
+@keyframes scroll-institutes {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+}
+
 .hero-badges {
   display: flex;
   gap: 10px;
@@ -210,6 +277,46 @@ nav a:hover {
   padding: 22px 0;
 }
 
+.hero-banner {
+  margin-top: 20px;
+  border: 1px solid var(--border);
+  border-radius: 20px;
+  overflow: hidden;
+  background: linear-gradient(105deg, rgba(8, 15, 30, 0.9), rgba(8, 15, 30, 0.5)),
+    url("../ce05b0d8-c887-4ce3-b5c1-f48594f68617.jpeg");
+  background-size: cover;
+  background-position: center;
+  box-shadow: var(--shadow);
+}
+
+.hero-banner-content {
+  padding: clamp(24px, 4vw, 44px);
+  max-width: 700px;
+}
+
+.hero-kicker {
+  display: inline-block;
+  margin: 0 0 8px;
+  padding: 4px 10px;
+  border-radius: 999px;
+  border: 1px solid var(--border);
+  background: rgba(255, 255, 255, 0.08);
+  color: var(--text);
+  font-size: 12px;
+  font-weight: 800;
+}
+
+.hero-banner h1 {
+  margin: 0;
+  line-height: 1.14;
+  font-size: clamp(30px, 4vw, 46px);
+}
+
+.hero-banner p {
+  margin: 12px 0 0;
+  color: var(--muted);
+}
+
 .section-title {
   display: flex;
   align-items: baseline;
@@ -235,6 +342,25 @@ nav a:hover {
   gap: 14px;
 }
 
+.top-doctor-card {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.top-doctor-image {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+  border-radius: 14px;
+  border: 1px solid var(--border);
+}
+
+.top-doctor-card h4 {
+  margin: 2px 0 0;
+  font-size: 17px;
+}
+
 .panel {
   background: var(--panel);
   border: 1px solid var(--border);
@@ -251,6 +377,10 @@ nav a:hover {
   margin: 0;
   color: var(--muted);
   font-size: 14px;
+}
+
+.service .know-more-link {
+  margin-top: 12px;
 }
 
 .doctor-card {
@@ -296,6 +426,108 @@ nav a:hover {
   font-size: 12px;
   font-weight: 800;
   color: var(--text);
+}
+
+.know-more-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  margin-top: 4px;
+  padding: 8px 12px;
+  border-radius: 999px;
+  border: 1px solid var(--border);
+  background: rgba(255, 255, 255, 0.06);
+  color: var(--text);
+  font-size: 12px;
+  font-weight: 800;
+}
+
+.know-more-link:hover {
+  background: rgba(255, 255, 255, 0.12);
+}
+
+.review-card p {
+  margin: 0 0 10px;
+  color: var(--muted);
+}
+
+.review-card strong {
+  font-size: 13px;
+}
+
+.testimonial-carousel {
+  display: grid;
+  grid-template-columns: auto 1fr auto;
+  gap: 10px;
+  align-items: center;
+}
+
+.testimonial-viewport {
+  overflow: hidden;
+}
+
+.testimonial-track {
+  display: flex;
+  transition: transform 0.45s ease;
+}
+
+.testimonial-slide {
+  min-width: 100%;
+}
+
+.carousel-btn {
+  width: 38px;
+  height: 38px;
+  border-radius: 999px;
+  border: 1px solid var(--border);
+  background: rgba(255, 255, 255, 0.08);
+  color: var(--text);
+  font-size: 24px;
+  line-height: 1;
+  cursor: pointer;
+}
+
+.carousel-dots {
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+  margin-top: 12px;
+}
+
+.dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 999px;
+  border: 0;
+  background: rgba(255, 255, 255, 0.35);
+  cursor: pointer;
+}
+
+.dot.active {
+  width: 20px;
+  background: linear-gradient(135deg, rgba(53, 208, 186, 0.95), rgba(90, 162, 255, 0.95));
+}
+
+.whatsapp-float {
+  position: fixed;
+  right: 18px;
+  bottom: 18px;
+  z-index: 50;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 11px 14px;
+  border-radius: 999px;
+  border: 1px solid rgba(255, 255, 255, 0.22);
+  background: linear-gradient(145deg, #1ebea5, #14a88f);
+  color: #ffffff;
+  font-size: 13px;
+  font-weight: 900;
+  box-shadow: 0 10px 25px rgba(15, 130, 113, 0.5);
+}
+
+.whatsapp-float:hover {
+  filter: brightness(1.05);
 }
 
 .muted {
@@ -371,8 +603,20 @@ footer {
   .hero-grid {
     grid-template-columns: 1fr;
   }
+  .institute-track {
+    animation-duration: 20s;
+  }
   .grid-3 {
     grid-template-columns: 1fr;
+  }
+  .stats-grid {
+    grid-template-columns: 1fr;
+  }
+  .testimonial-carousel {
+    grid-template-columns: 1fr;
+  }
+  .carousel-btn {
+    display: none;
   }
   .doctor-card {
     grid-template-columns: 86px 1fr;
