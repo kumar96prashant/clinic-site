@@ -9,10 +9,13 @@
   <body>
     <header>
       <div class="container topbar">
-        <div class="logo">
-          <strong>Goyal Clinic</strong>
-          <span>Doctor profile</span>
-        </div>
+        <a href="index.html" class="logo">
+          <div class="logo-icon">GC</div>
+          <div class="logo-text">
+            <strong>Goyal Clinic</strong>
+            <span>Doctor profile</span>
+          </div>
+        </a>
         <nav aria-label="Primary navigation">
           <a href="index.html">Home</a>
           <a href="doctors.html">Doctors</a>
@@ -41,6 +44,133 @@
               across all life stages.
             </p>
             <a class="know-more-link" href="index.html">Back to Home</a>
+          </div>
+        </div>
+        
+        <style>
+          .timeline {
+            position: relative;
+            max-width: 800px;
+            margin: 40px auto;
+            padding-left: 50px;
+          }
+          
+          .timeline::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 24px;
+            width: 2px;
+            background: linear-gradient(180deg, var(--brand), var(--brand-2));
+            box-shadow: var(--glow-shadow);
+          }
+          
+          .timeline-item {
+            position: relative;
+            margin-bottom: 40px;
+          }
+          
+          .timeline-item:last-child {
+            margin-bottom: 0;
+          }
+          
+          .timeline-dot {
+            position: absolute;
+            left: -50px;
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            background: #fff;
+            border: 3px solid var(--panel);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            overflow: hidden;
+            box-shadow: 0 0 15px rgba(0, 240, 255, 0.4);
+            z-index: 1;
+          }
+          
+          .timeline-dot img {
+            width: 32px;
+            height: 32px;
+            object-fit: contain;
+          }
+          
+          .timeline-content {
+            background: var(--panel);
+            border: 1px solid var(--border);
+            border-radius: 16px;
+            padding: 24px;
+            backdrop-filter: blur(10px);
+            transition: all 0.3s ease;
+          }
+          
+          .timeline-content:hover {
+            transform: translateX(8px);
+            border-color: var(--brand);
+            box-shadow: var(--glow-shadow);
+            background: var(--panel-hover);
+          }
+          
+          .timeline-content h4 {
+            margin: 0 0 6px;
+            color: var(--brand);
+            font-size: 20px;
+            font-weight: 800;
+          }
+          
+          .timeline-content p {
+            margin: 0;
+            color: var(--text);
+            font-size: 16px;
+          }
+        </style>
+
+        <div class="section-title" style="margin-top: 60px;">
+          <h3>My Journey</h3>
+          <span>Academic &amp; Professional Experience</span>
+        </div>
+        
+        <div class="timeline">
+          <div class="timeline-item">
+            <div class="timeline-dot">
+              <img src="sgrh_logo.webp" alt="Sir Ganga Ram Hospital Logo" style="width: 40px; height: 40px;" />
+            </div>
+            <div class="timeline-content">
+              <h4>Superspecialisation</h4>
+              <p>Sir Ganga Ram Hospital, New Delhi</p>
+            </div>
+          </div>
+
+          <div class="timeline-item">
+            <div class="timeline-dot">
+              <img src="aiims_logo.svg" alt="AIIMS Logo" style="width: 40px; height: 40px;" />
+            </div>
+            <div class="timeline-content">
+              <h4>Senior Residency</h4>
+              <p>All India Institute of Medical Sciences (AIIMS), New Delhi</p>
+            </div>
+          </div>
+
+          <div class="timeline-item">
+            <div class="timeline-dot">
+              <img src="mamc_logo.svg" alt="MAMC Logo" style="width: 40px; height: 40px;" />
+            </div>
+            <div class="timeline-content">
+              <h4>MS (Obstetrics &amp; Gynaecology)</h4>
+              <p>Maulana Azad Medical College (MAMC) and Lok Nayak Hospital, New Delhi</p>
+            </div>
+          </div>
+
+          <div class="timeline-item">
+            <div class="timeline-dot">
+              <img src="mamc_logo.svg" alt="MAMC Logo" style="width: 40px; height: 40px;" />
+            </div>
+            <div class="timeline-content">
+              <h4>MBBS</h4>
+              <p>Maulana Azad Medical College (MAMC) and Lok Nayak Hospital, New Delhi</p>
+            </div>
           </div>
         </div>
       </section>

@@ -72,11 +72,7 @@ header {
   padding: 16px 0;
 }
 
-.logo {
-  display: flex;
-  flex-direction: column;
-  gap: 4px;
-}
+
 
 .logo strong {
   font-size: 22px;
@@ -825,4 +821,35 @@ footer {
   .pill-row {
     justify-content: center;
   }
+}
+
+.logo {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 12px;
+  text-decoration: none;
+  transition: transform 0.3s ease;
+}
+.logo:hover {
+  transform: translateY(-2px);
+}
+.logo-text {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+.logo-icon {
+  background: linear-gradient(135deg, var(--brand), var(--brand-2));
+  color: var(--bg);
+  width: 44px;
+  height: 44px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 12px;
+  font-weight: 900;
+  font-size: 20px;
+  box-shadow: var(--glow-shadow);
+  text-shadow: none;
 }
