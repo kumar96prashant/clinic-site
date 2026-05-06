@@ -222,10 +222,13 @@
                 <label for="message">Message</label>
                 <textarea id="message" name="message" placeholder="Symptoms, preferred date/time, etc." required></textarea>
               </div>
-              <button class="btn btn-primary" type="submit" style="width:100%;">Send request</button>
-              <p class="muted" style="margin:10px 0 0; font-size:12px;">
-                This demo form does not send data to a server yet.
+              <button class="btn btn-primary" type="submit" style="width:100%; background: linear-gradient(135deg, #25D366, #128C7E); color: white;">Send via WhatsApp</button>
+              <p class="muted" style="margin:10px 0 0; font-size:12px; text-align: center;">
+                Your request will be sent directly via WhatsApp.
               </p>
+              <div style="text-align: center; margin-top: 12px;">
+                <a href="https://wa.me/919910657311" target="_blank" style="font-size: 14px; font-weight: 700; color: #25D366; text-decoration: underline;">Or click here to chat directly</a>
+              </div>
             </form>
           </div>
 
@@ -335,7 +338,15 @@
       if (form) {
         form.addEventListener("submit", (e) => {
           e.preventDefault();
-          alert("Thanks! Your appointment request has been captured for this demo.");
+          const name = document.getElementById("name").value;
+          const phone = document.getElementById("phone").value;
+          const email = document.getElementById("email").value;
+          const message = document.getElementById("message").value;
+          
+          const text = `Hi, I would like to book an appointment.\n\n*Name:* ${name}\n*Phone:* ${phone}\n*Email:* ${email}\n*Message:* ${message}`;
+          const encodedText = encodeURIComponent(text);
+          window.open(`https://wa.me/919910657311?text=${encodedText}`, "_blank");
+          
           form.reset();
         });
       }
