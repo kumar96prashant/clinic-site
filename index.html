@@ -1,29 +1,224 @@
 <!DOCTYPE html>
-<html>
-<head>
-    <title>ABC Clinic</title>
-    <link rel="stylesheet" href="css/style.css">
-</head>
-<body>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>ABC Clinic | Quality Care</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <header>
+      <div class="container topbar">
+        <div class="logo">
+          <strong>ABC Clinic</strong>
+          <span>Quality healthcare you can trust</span>
+        </div>
+        <nav aria-label="Primary navigation">
+          <a href="index.html" aria-current="page">Home</a>
+          <a href="doctors.html">Doctors</a>
+          <a href="blog.html">Blog</a>
+          <a href="videos.html">Videos</a>
+        </nav>
+      </div>
+    </header>
 
-<header>
-    <h1>ABC Clinic</h1>
-    <nav>
-        <a href="index.html">Home</a>
-        <a href="doctors.html">Doctors</a>
-        <a href="blog.html">Blog</a>
-        <a href="videos.html">Videos</a>
-    </nav>
-</header>
+    <main class="container">
+      <section class="hero">
+        <div class="hero-grid">
+          <div class="hero-card">
+            <h2>Quality Healthcare You Can Trust</h2>
+            <p>3 experienced doctors. Modern facilities. Clear treatment plans.</p>
 
-<section class="hero">
-    <h2>Quality Healthcare You Can Trust</h2>
-    <p>3 Experienced Doctors | Modern Facilities</p>
-</section>
+            <div class="hero-badges" aria-label="Clinic highlights">
+              <div class="badge">
+                Same-day slots
+                <span>Subject to availability</span>
+              </div>
+              <div class="badge">
+                Patient-first care
+                <span>Transparent guidance</span>
+              </div>
+              <div class="badge">
+                Preventive focus
+                <span>Long-term wellbeing</span>
+              </div>
+            </div>
+          </div>
 
-<footer>
-    <p>© 2026 ABC Clinic</p>
-</footer>
+          <div class="hero-card cta-card">
+            <h3>Book a visit</h3>
+            <p>Choose a doctor and share your symptoms. We’ll help you find the right appointment.</p>
+            <div class="btn-row">
+              <a class="btn btn-primary" href="doctors.html" role="button">View Doctors</a>
+              <a class="btn btn-secondary" href="#contact" role="button">Contact Us</a>
+            </div>
+            <p class="muted" style="margin:0; font-weight:700;">
+              Call: <strong>(+91) 90000 00000</strong>
+            </p>
+          </div>
+        </div>
+      </section>
 
-</body>
+      <section class="section" aria-label="Services">
+        <div class="section-title">
+          <h3>Our Services</h3>
+          <span>What we help with</span>
+        </div>
+
+        <div class="grid-3">
+          <div class="panel service">
+            <h4>General consultations</h4>
+            <p>Health assessments, preventive guidance, and ongoing care plans.</p>
+          </div>
+          <div class="panel service">
+            <h4>Cardiac & risk screening</h4>
+            <p>Heart health checks, lifestyle counseling, and screening follow-ups.</p>
+          </div>
+          <div class="panel service">
+            <h4>Orthopedic care</h4>
+            <p>Evaluation for pain, mobility concerns, and sports injury support.</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" aria-label="Doctors preview">
+        <div class="section-title">
+          <h3>Meet the Doctors</h3>
+          <span>3 specialists</span>
+        </div>
+
+        <div class="grid-3" role="list" aria-label="Doctor portfolio cards">
+          <article class="panel doctor-card" role="listitem">
+            <div class="doctor-photo">
+              <img src="40e5b3c6-85bc-4a08-9d90-1cc1109232ba.jpeg" alt="Portrait of Dr. Rakhi Goel" />
+            </div>
+            <div class="doctor-meta">
+              <h4>Dr. Rakhi Goel</h4>
+              <p>Anaesthesia and Pain Specialist</p>
+              <div class="pill-row" aria-label="Special interests">
+                <span class="pill">Pain management</span>
+                <span class="pill">Chronic pain care</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="panel doctor-card" role="listitem">
+            <div class="doctor-photo">
+              <img src="ce05b0d8-c887-4ce3-b5c1-f48594f68617.jpeg" alt="Portrait of Dr. Vijaita" />
+            </div>
+            <div class="doctor-meta">
+              <h4>Dr. Vijaita</h4>
+              <p>Gynaecologist &amp; IVF Specialist</p>
+              <div class="pill-row" aria-label="Special interests">
+                <span class="pill">Fertility evaluation</span>
+                <span class="pill">IVF treatment</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="panel doctor-card" role="listitem">
+            <div class="doctor-photo">
+              <img src="d2f0bde5-e0ec-4a04-abf2-1b982e907528.jpeg" alt="Portrait of Dr. Lokesh Goyal" />
+            </div>
+            <div class="doctor-meta">
+              <h4>Dr. Lokesh Goyal</h4>
+              <p>Orthopedics &amp; Joint Replacement Surgeon</p>
+              <div class="pill-row" aria-label="Special interests">
+                <span class="pill">Knee &amp; hip replacement</span>
+                <span class="pill">Joint pain care</span>
+              </div>
+            </div>
+          </article>
+        </div>
+
+        <div style="margin-top:14px;">
+          <a class="btn btn-secondary" href="doctors.html" role="button">See full profiles</a>
+        </div>
+      </section>
+
+      <section class="section" id="contact" aria-label="Contact">
+        <div class="section-title">
+          <h3>Contact & Appointments</h3>
+          <span>We reply during clinic hours</span>
+        </div>
+
+        <div class="contact-grid">
+          <div class="panel">
+            <h3 style="margin:0 0 8px; font-size:18px;">Request an appointment</h3>
+            <p class="muted" style="margin:0 0 14px;">
+              Share your name, contact details, and a short note about what you need.
+            </p>
+
+            <form id="contactForm">
+              <div style="margin-bottom:12px;">
+                <label for="name">Name</label>
+                <input id="name" name="name" autocomplete="name" required />
+              </div>
+              <div style="margin-bottom:12px;">
+                <label for="email">Email</label>
+                <input id="email" name="email" type="email" autocomplete="email" required />
+              </div>
+              <div style="margin-bottom:12px;">
+                <label for="phone">Phone</label>
+                <input id="phone" name="phone" inputmode="tel" autocomplete="tel" />
+              </div>
+              <div style="margin-bottom:12px;">
+                <label for="message">Message</label>
+                <textarea id="message" name="message" placeholder="Symptoms, preferred date/time, etc." required></textarea>
+              </div>
+              <button class="btn btn-primary" type="submit" style="width:100%;">Send request</button>
+              <p class="muted" style="margin:10px 0 0; font-size:12px;">
+                This demo form does not send data to a server yet.
+              </p>
+            </form>
+          </div>
+
+          <div class="panel">
+            <h3 style="margin:0 0 8px; font-size:18px;">Clinic details</h3>
+            <p class="muted" style="margin:0;">
+              <strong>Phone:</strong> (+91) 90000 00000
+            </p>
+            <p class="muted" style="margin:10px 0 0;">
+              <strong>Email:</strong> hello@abcclinic.example
+            </p>
+            <p class="muted" style="margin:10px 0 0;">
+              <strong>Address:</strong> 123 Health Street, Your City
+            </p>
+
+            <div class="divider"></div>
+
+            <h3 style="margin:0 0 8px; font-size:16px;">What to bring</h3>
+            <div class="pill-row" aria-label="Checklist">
+              <span class="pill">ID proof</span>
+              <span class="pill">Prior prescriptions</span>
+              <span class="pill">Reports/scan copies</span>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div class="container footer-row">
+        <div>© 2026 ABC Clinic. All rights reserved.</div>
+        <div class="small-links" aria-label="Quick links">
+          <a href="index.html">Home</a>
+          <a href="doctors.html">Doctors</a>
+          <a href="blog.html">Blog</a>
+          <a href="videos.html">Videos</a>
+        </div>
+      </div>
+    </footer>
+
+    <script>
+      const form = document.getElementById("contactForm");
+      if (form) {
+        form.addEventListener("submit", (e) => {
+          e.preventDefault();
+          alert("Thanks! Your appointment request has been captured for this demo.");
+          form.reset();
+        });
+      }
+    </script>
+  </body>
 </html>
