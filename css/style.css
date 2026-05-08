@@ -840,18 +840,14 @@ footer {
   gap: 2px;
 }
 .logo-icon {
-  background: linear-gradient(135deg, var(--brand), var(--brand-2));
-  color: var(--bg);
-  width: 44px;
-  height: 44px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  border-radius: 12px;
-  font-weight: 900;
-  font-size: 20px;
-  box-shadow: var(--glow-shadow);
-  text-shadow: none;
+  width: auto;
+  max-width: 200px;
+  height: 54px;
+  object-fit: contain;
+  background-color: #ffffff;
+  padding: 4px;
+  border-radius: 8px;
+  display: block;
 }
 
 /* Timeline Component */
