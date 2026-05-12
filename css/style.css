@@ -396,8 +396,8 @@ nav a:hover, nav a[aria-current="page"] {
 }
 
 .hero-kicker {
-  display: inline-block;
-  margin: 0 0 16px;
+  display: table;
+  margin: 0 auto 16px;
   padding: 6px 16px;
   border-radius: 999px;
   border: 1px solid var(--border-glow);
@@ -407,6 +407,7 @@ nav a:hover, nav a[aria-current="page"] {
   font-weight: 800;
   text-transform: uppercase;
   letter-spacing: 1.5px;
+  text-align: center;
 }
 
 .hero-banner h1 {
@@ -920,6 +921,13 @@ footer {
 
   .hero-banner p {
     font-size: 16px;
+  }
+
+  .hero-kicker {
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    justify-content: center;
   }
 
   .section {
